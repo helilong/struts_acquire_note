@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+  <package name="basicstruts" extends="struts-default">
+ 
+  <action name="index">
+    <result>index.jsp</result>
+  </action>  
+  
+  <action name="acquire1" class="com.acquire.action.Acquire1Action">
+  	<result name="success">/succeed.jsp</result>
+  </action> 
+ 
+ 
+  <action name="acquire2" class="com.acquire.action.Acquire2Action">
+  	<result name="success">/succeed.jsp</result>
+  </action> 
+  
+   <action name="acquire3" class="com.acquire.action.Acquire3Action">
+  	<result name="success">/succeed.jsp</result>
+  </action> 
+  
+  
+  <!-- 注解 -->
+   <action name="stack" class="com.valuestack.action.StackAction">
+  	
+  </action> 
+</package>
+ 
+ 
+ 
+ 
+</struts>
